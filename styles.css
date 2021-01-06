@@ -1,137 +1,137 @@
-body{
-    background-color: #deffff;
-    font-family: helvetica;
+body {
+  background-color: #e8e6e6;
+  font-family: helvetica;
+}
+
+div.header-img {
+  width: 100%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  position: fixed;
+}
+
+#header-img {
+  width: 350px;
+  filter: invert(100%);
+  margin: auto;
+  display: block;
+}
+
+div.nav-bar {
+  overflow: hidden;
+  position: fixed;
+  background-color: #1a1a1a;
+  width: 100%;
+  top: 47px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 50px;
+  float: left;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  background-color: #076787;
+  border-radius: 5px;
+}
+
+#title {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#email {
+  display: block;
+  margin: auto;
+  width: 180px;
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: rgb(233, 233, 235) !important;
+}
+#email:hover {
+  background-color: rgb(190, 190, 190);
+  width: 300px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  padding: 8px;
+  width: 80px;
+  border-radius: 20px;
+  background-color: #44cc00;
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+#submit:hover {
+  background-color: rgb(5, 71, 71);
+}
+
+#text {
+  width: 700px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#video {
+  margin: auto;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+div.flex-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+div.products {
+  background-color: white;
+  margin: 20px;
+  transition: box-shadow 0.5s ease;
+  border-radius: 2px;
+}
+.products:hover {
+  box-shadow: 0px 0px 10px #008fb3;
+}
+div.product-title {
+  padding: 10px;
+  background-color: #1a1919;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+}
+#product-submit {
+  background-color: #008f13;
+  border: none;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  transition: background 0.5s ease;
+  border-radius: 2px;
+}
+
+#product-submit:hover {
+  background-color: rgb(5, 71, 71);
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
   }
-  
-  div.header-img{
-    width: 100%;
-    background-color:#1a1a1a;
-    overflow: hidden;
-    position:fixed;
-  }
-  
-  #header-img{
-    width:350px;
-    filter:invert(100%);
-    margin: auto;
-    display: block;
-  }
-  
-  div.nav-bar{
-    overflow: hidden;
-    position: fixed;
-    background-color:#1a1a1a;
-    width:100%;
-    top: 47px;
-    }
-  
-  .nav-link{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size:18px;
-    padding: 14px 50px;
-    float: left;
-    transition: .5s;
-  }
-  
-  .nav-link:hover{
-    background-color: #076787;
-    border-radius: 5px;
-  }
-  
-  #title{
-    margin-top: 150px;
-    text-align: center;
-  }
-  
-  #email{
-    display: block;
-    margin: auto;
-    width: 180px;
-    padding: 8px;
-    border-radius: 50px;
-    font-size: 15px;
-    transition: .5s;
-    background-color: rgb(233, 233, 235)!important;
-  }
-  #email:hover{
-    background-color:rgb(190, 190, 190);
-    width:300px;
-  }
-  
-  #submit{
-    display: block;
-    margin: auto;
-    padding: 8px;
-    width: 80px;
-    border-radius: 20px;
-    background-color: #44cc00;
-    margin-top: 20px;
-    color: white;
-    font-size: 15px;
-    transition: .5s;
-  }
-  
-  #submit:hover{
-    background-color: rgb(5, 71, 71);
-  }
-  
-  #text{
-    width: 700px;
-    margin: auto;
-    margin-top: 100px;
-  }
-  
-  #video{
-    margin:auto;
-    display:block;
-    margin-top:100px;
-    margin-bottom:100px;
-    background-color: #34ebeb;
-    padding:3px;
-  }
-  
-  div.flex-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  div.products{
-    background-color: white;
-    margin: 20px;
-    transition: box-shadow .5s ease;
-    border-radius: 2px;
-  }
-  .products:hover{
-    box-shadow:0px 0px 10px #008fb3 ;
-  }
-  div.product-title{
-    padding:10px;
-    background-color:#34ebcd;
-    color:white;
-    text-align:center;
-    border-radius: 2px;
-  }
-  #product-submit{
-    background-color:#008f13;
-    border:none;
-    width:100%;
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-    padding:15px;
-    transition:background .5s ease;
-    border-radius: 2px;
-  }
-  
-  #product-submit:hover{
-    background-color:rgb(5, 71, 71);
-  }
-  
-  @media screen and (max-width:600px){
-    .flex-container {
-      flex-direction:column;
-    }
-  }
+}
