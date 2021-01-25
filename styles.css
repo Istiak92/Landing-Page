@@ -2,6 +2,11 @@ body {
   background-color: #e8e6e6;
   font-family: helvetica;
 }
+li {
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+}
 
 div.header-img {
   width: 100%;
@@ -9,11 +14,14 @@ div.header-img {
   overflow: hidden;
   position: fixed;
 }
+.image img {
+  width: 425px;
+}
 
 #header-img {
-  width: 350px;
+  width: 190px;
   filter: invert(100%);
-  margin: auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -66,7 +74,7 @@ div.nav-bar {
   padding: 8px;
   width: 80px;
   border-radius: 20px;
-  background-color: #44cc00;
+  background-color: #032b16;
   margin-top: 20px;
   color: white;
   font-size: 15px;
@@ -74,7 +82,7 @@ div.nav-bar {
 }
 
 #submit:hover {
-  background-color: rgb(5, 71, 71);
+  background-color: #0a5f5f;
 }
 
 #text {
@@ -103,6 +111,7 @@ div.products {
   margin: 20px;
   transition: box-shadow 0.5s ease;
   border-radius: 2px;
+  max-width: 425px;
 }
 .products:hover {
   box-shadow: 0px 0px 10px #008fb3;
@@ -114,8 +123,11 @@ div.product-title {
   text-align: center;
   border-radius: 2px;
 }
+div.size {
+  line-height: 0.05;
+}
 #product-submit {
-  background-color: #008f13;
+  background-color: #f83535;
   border: none;
   width: 100%;
   color: white;
@@ -127,7 +139,7 @@ div.product-title {
 }
 
 #product-submit:hover {
-  background-color: rgb(5, 71, 71);
+  background-color: #852929;
 }
 
 @media screen and (max-width: 600px) {
