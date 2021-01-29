@@ -14,9 +14,6 @@ div.header-img {
   overflow: hidden;
   position: fixed;
 }
-.image img {
-  width: 425px;
-}
 
 #header-img {
   width: 190px;
@@ -86,7 +83,8 @@ div.nav-bar {
 }
 
 #text {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   margin: auto;
   margin-top: 100px;
 }
@@ -98,6 +96,8 @@ div.nav-bar {
   margin-bottom: 100px;
   background-color: #fff;
   padding: 3px;
+  width: 100%;
+  max-width: 500px;
 }
 
 div.flex-container {
@@ -111,6 +111,11 @@ div.products {
   margin: 20px;
   transition: box-shadow 0.5s ease;
   border-radius: 2px;
+  max-width: 425px;
+  height: 100%;
+}
+.image img {
+  width: 100%;
   max-width: 425px;
 }
 .products:hover {
@@ -142,8 +147,18 @@ div.size {
   background-color: #852929;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .flex-container {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div.products {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #title {
+    margin-top: 200px;
   }
 }
