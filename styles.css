@@ -21,7 +21,6 @@ div.header-img {
   margin: 0 auto;
   display: block;
 }
-
 div.nav-bar {
   overflow: hidden;
   position: fixed;
@@ -30,7 +29,7 @@ div.nav-bar {
   top: 47px;
 }
 
-.nav-link {
+#nav-bar a{
   color: white;
   text-decoration: none;
   text-align: center;
@@ -40,8 +39,8 @@ div.nav-bar {
   transition: 0.5s;
 }
 
-.nav-link:hover {
-  background-color: #076787;
+#nav-bar a:hover {
+  background-color:#696969;
   border-radius: 5px;
 }
 
@@ -71,7 +70,7 @@ div.nav-bar {
   padding: 8px;
   width: 80px;
   border-radius: 20px;
-  background-color: #032b16;
+  background-color: #000000;
   margin-top: 20px;
   color: white;
   font-size: 15px;
@@ -79,7 +78,7 @@ div.nav-bar {
 }
 
 #submit:hover {
-  background-color: #0a5f5f;
+  background-color: grey;
 }
 
 #text {
@@ -131,8 +130,16 @@ div.product-title {
 div.size {
   line-height: 0.05;
 }
-#product-submit {
-  background-color: #f83535;
+.product-title p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-description p{
+  font-size: 24px;
+  font-weight: bold;
+}
+.product-submit {
+  background-color: #1a1919;
   border: none;
   width: 100%;
   color: white;
@@ -143,11 +150,18 @@ div.size {
   border-radius: 2px;
 }
 
-#product-submit:hover {
-  background-color: #852929;
+.product-submit:hover {
+  background-color: grey;
 }
 
 @media screen and (max-width: 750px) {
+  div.products{
+    max-width: 100%;
+  }
+  div.products img {
+    max-width: 100%;
+    width:100%;
+  }
   .flex-container {
     flex-direction: column;
   }
@@ -157,7 +171,8 @@ div.size {
     margin: 10px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
+  
   #title {
     margin-top: 200px;
   }
